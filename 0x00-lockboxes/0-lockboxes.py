@@ -8,8 +8,11 @@ def canUnlockAll(boxes):
             if key in keychain:
                 continue
             else:
-                keychain.append(key)
-    if len(boxes) == len(keychain):
+                if key <= len(boxes) - 1:
+                    keychain.append(key)
+                else:
+                    continue
+    if len(boxes) is len(keychain) or len(boxes) is 0:
         return True
     else:
         return False

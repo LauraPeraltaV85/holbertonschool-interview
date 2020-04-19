@@ -4,7 +4,7 @@ def canUnlockAll(boxes):
     key = 0
     keychain = [0]
     if len(boxes) is 0:
-        return
+        return True
     for key in keychain:
         for key in boxes[key]:
             if key in keychain:
@@ -14,7 +14,7 @@ def canUnlockAll(boxes):
                     keychain.append(key)
                 else:
                     continue
-    if len(boxes) is len(keychain) or len(boxes) is 0:
+    if len(boxes) == len(keychain):
         return True
     else:
         return False

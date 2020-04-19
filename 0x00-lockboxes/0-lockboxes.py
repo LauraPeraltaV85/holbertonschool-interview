@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
+
 def canUnlockAll(boxes):
+
     key = 0
     keychain = [0]
     if len(boxes) is 0:

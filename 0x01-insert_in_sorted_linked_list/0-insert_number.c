@@ -30,9 +30,9 @@ temp = *head;
 while (temp != NULL)
 {
 if (temp == NULL)
-return (NULL);
+*head = newnode;
 temp = temp->next;
-if (temp->next->n > newnode->n)
+if (temp->next->n > newnode->n || temp->next == NULL)
 {
 newnode->next = temp->next;
 temp->next = newnode;

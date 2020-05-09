@@ -7,8 +7,10 @@ Method that calculates the fewest number of operations needed to result in exact
 
 def minOperations(n):
     """This method returns the number of operations to copy paste"""
+
     if n < 1:
         return 0
+
     char = 1
     copy = 0
     pasted = 1
@@ -16,6 +18,7 @@ def minOperations(n):
     pre = 1
     notcopy1 = 0
     notcopy3 = 0
+
     while char < n:
         if n % (char * 2) == 0:
             if notcopy1 == 1:

@@ -6,8 +6,6 @@ Method that calculates the fewest number of operations needed to result in exact
 
 def minOperations(n):
     """This method returns the number of operations to copy paste"""
-
-
     if n < 1:
         return 0
 

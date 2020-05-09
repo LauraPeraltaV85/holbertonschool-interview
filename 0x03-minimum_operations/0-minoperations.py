@@ -4,13 +4,13 @@ Method that calculates the fewest number of operations needed to result in exact
 """
 
 
+
 def minOperations(n):
     """This method returns the number of operations to copy paste"""
     if n < 1:
         return 0
     char = 1
     copy = 0
-    #copied = 0
     pasted = 1
     paste = 0
     pre = 1
@@ -25,7 +25,6 @@ def minOperations(n):
             pre = char
             paste += 1
             char = 2 * char
-            #copied += ant
             pasted += (2 * pre) - pasted
         elif n % char == 0 and char != 1:
             if n % pasted == 0:
@@ -40,7 +39,6 @@ def minOperations(n):
                 copy += 1
             paste += 1
             pasted += pre
-            # print("entra en por 1", co, pegados)
         else:
             notcopy1 = 0
             if notcopy3 == 0:
@@ -50,7 +48,6 @@ def minOperations(n):
             char = char + pre
             paste += 1
             pasted += pre
-            # print("entra en sumar 1", co, pegados)
         if pasted >= n:
             break
     return copy + paste

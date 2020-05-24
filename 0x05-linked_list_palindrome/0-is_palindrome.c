@@ -55,11 +55,15 @@ if (*head == NULL)
 return (1);
 
 len = list_len(*head);
-
+if (len >= 2)
+{
 if (len % 2 == 0)
 midd = len / 2;
 else
 midd = len / 2 + 1;
+}
+else
+return (1); 
 
 temp = *head;
 for (i = 0; i <= midd; i++)

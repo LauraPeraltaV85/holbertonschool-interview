@@ -15,7 +15,7 @@ if __name__ == "__main__":
             if statusn[i] > 0:
                 print("{}: {}".format(statuses[i], statusn[i]))
 
-    try: 
+    try:
         for line in sys.stdin:
             each_argvs = line.split(" ")
             if len(each_argvs) == 9:

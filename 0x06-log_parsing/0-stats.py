@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-""" this calculates the file size and
-number of status codes in a log list
-"""
+""" this calculates and prints file logs"""
 import sys
-
 
 if __name__ == "__main__":
     a = 1

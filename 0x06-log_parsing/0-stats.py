@@ -18,7 +18,7 @@ if __name__ == "__main__":
     try:
         for line in sys.stdin:
             each_argvs = line.split(" ")
-            if len(each_argvs) == 9:
+            if len(each_argvs) > 6:
                 status = each_argvs[-2]
                 if status in statuses:
                     i = statuses.index(status)

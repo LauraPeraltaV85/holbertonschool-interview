@@ -26,7 +26,6 @@ if __name__ == "__main__":
                     size = size + int(each_argvs[-1][:-1])
                     if a % 10 == 0:
                         print_log(statusn, statuses)
-                size = size + int(each_argvs[-1][:-1])
             a = a + 1
     except KeyboardInterrupt:
         print_log(statusn, statuses)
